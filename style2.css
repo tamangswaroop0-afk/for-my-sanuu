@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff5f7;
+    color: #3d2028;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        radial-gradient(circle at top left, #ffd9e2, transparent 35%),
+        radial-gradient(circle at bottom right, #ffc1d2, transparent 35%),
+        #fff5f7;
+
+    padding: 30px;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.small-text {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #b85c73;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(70px, 12vw, 150px);
+    color: #b82f52;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
+    color: #68434d;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 32px;
+
+    background: #b82f52;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 50px;
+
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(184, 47, 82, 0.25);
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(184, 47, 82, 0.35);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 900px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    padding: 60px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(120, 30, 55, 0.08);
+
+    backdrop-filter: blur(10px);
+}
+
+.card h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 55px;
+    color: #b82f52;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    color: #5d3a44;
+}
+
+
+/* =========================
+   PINK SECTION
+========================= */
+
+.pink-section {
+    background: #ffe5eb;
+}
+
+
+/* =========================
+   QUALITIES
+========================= */
+
+.qualities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.quality {
+    padding: 30px;
+    background: #fff6f8;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.quality span {
+    font-size: 35px;
+}
+
+.quality h3 {
+    margin: 15px 0;
+    color: #b82f52;
+}
+
+
+/* =========================
+   DARK SECTION
+========================= */
+
+.dark-section {
+    background: #351b24;
+}
+
+.dark-card {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.dark-card h2 {
+    color: #ffb7c9;
+}
+
+.dark-card p {
+    color: #f4dfe5;
+}
+
+
+/* =========================
+   BIRTHDAY
+========================= */
+
+.birthday-section {
+    background:
+        radial-gradient(circle at center, #ffe0e8, #fff5f7);
+}
+
+.birthday-card {
+    text-align: center;
+}
+
+.birthday-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.birthday-card h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 42px;
+    color: #b82f52;
+    margin: 30px 0;
+}
+
+
+/* =========================
+   PROMISE
+========================= */
+
+.promise {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at center, #ffb8c9, #8f2744);
+}
+
+.promise-content {
+    max-width: 700px;
+    color: white;
+}
+
+.promise .small-text {
+    color: #ffe1e8;
+}
+
+.promise h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(60px, 10vw, 100px);
+    margin-bottom: 25px;
+}
+
+.promise p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.big-heart {
+    font-size: 80px;
+    margin: 35px 0;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+.signature {
+    margin-top: 30px;
+}
+
+.signature span {
+    font-family: "Great Vibes", cursive;
+    font-size: 40px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #28141b;
+    color: #eab8c5;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts span {
+    position: fixed;
+    bottom: -50px;
+
+    font-size: 20px;
+
+    opacity: 0.5;
+
+    animation: float 10s linear infinite;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.hearts span:nth-child(2) {
+    left: 25%;
+    animation-delay: 3s;
+}
+
+.hearts span:nth-child(3) {
+    left: 40%;
+    animation-delay: 5s;
+}
+
+.hearts span:nth-child(4) {
+    left: 55%;
+    animation-delay: 2s;
+}
+
+.hearts span:nth-child(5) {
+    left: 70%;
+    animation-delay: 6s;
+}
+
+.hearts span:nth-child(6) {
+    left: 82%;
+    animation-delay: 4s;
+}
+
+.hearts span:nth-child(7) {
+    left: 92%;
+    animation-delay: 7s;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+
+}
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 100svh;
+    }
+
+    .card {
+        padding: 35px 22px;
+    }
+
+    .card h2 {
+        font-size: 45px;
+    }
+
+    .qualities {
+        grid-template-columns: 1fr;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .birthday-card h3 {
+        font-size: 34px;
+    }
+
+}
